@@ -81,6 +81,17 @@ def flight_fir_info(flight, fir):
             "is {}fly-through".format("" if flight.is_flythrough(fir) else "not ")
         )
 
+# return info about the relation between a flight and a fir in csv format
+def flight_fir_csv(flight, fir):
+    return ','.join([
+            fir.properties['ICAOCODE'],
+            flight.properties['flight_number'],
+            str(fir.charge_factor(flight)),
+            str(flight.crosses_fir(fir)),
+            str(flight.is_domestic(fir)),
+            str(flight.is_flythrough(fir))
+        ])
+
 # load json files (fir and flights)
 def parse(fnfir, fnflights):
     with open(fnfir, 'r') as infir:
@@ -90,11 +101,14 @@ def parse(fnfir, fnflights):
 
     return fir, flights
 
-# print info about a fir and its relation with each flight in the flights file
 # NOTE: the fir file is assumed to only contain one fir roi
-def print_info(fnfir, fnflights):
+def run(fnfir, fnflights, csv=False, output=None):
     fir, flights = parse(fnfir, fnflights)
     fir = FIR(fir)
     for flight in flights['features']:
         flight = Flight(flight)
-        print(flight_fir_info(flight, fir))
+        info = flight_fir_csv(flight, fir) if csv else flight_fir_info(flight, fir)
+        print(info)
+        if output:
+            with open(output, 'a') as outf:
+                outf.write(info + '\n')
