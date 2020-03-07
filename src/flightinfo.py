@@ -105,10 +105,27 @@ def parse(fnfir, fnflights):
 def run(fnfir, fnflights, csv=False, output=None):
     fir, flights = parse(fnfir, fnflights)
     fir = FIR(fir)
+
+    airlines_crossing = {}
+    airports_ending = {}
+    airports_starting = {}
+
     for flight in flights['features']:
         flight = Flight(flight)
         info = flight_fir_csv(flight, fir) if csv else flight_fir_info(flight, fir)
+
+        if flight.crosses_fir(fir):
+            airline = flight.properties['airline']
+            if airline not in airlines_crossing:
+                airlines_crossing[airline] = 1
+            else:
+                airlines_crossing[airline] += 1
+
         print(info)
         if output:
             with open(output, 'a') as outf:
                 outf.write(info + '\n')
+
+    airlines_crossing_sorted = sorted(airlines_crossing.items(), key=lambda a: -a[1])
+    print('\nMost popular airlines:')
+    print('\n'.join(["{}: {} flights crossing the FIR".format(a[0],a[1]) for a in airlines_crossing_sorted]))
