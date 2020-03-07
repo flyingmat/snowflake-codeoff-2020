@@ -86,16 +86,9 @@ def parse(fnfir, fnflights):
         flights = json.load(inflights)
     return fir, flights
 
-def main():
-    fir, flights = parse('single_fir.geojson', 'flights.geojson')
-    # for flight in flights['features']:
-    #     test_flight(flight)
-    # test_flight(Flight(flights['features'][0]))
-    roi = FIR(fir)
-    for jf in flights['features']:
-        flight = Flight(jf)
-        # print(flight_fir_info(flight, roi))
-        flight_fir_info(flight, roi)
-
-if __name__ == '__main__':
-    main()
+def print_info(fnfir, fnflights):
+    fir, flights = parse(fnfir, fnflights)
+    fir = FIR(fir)
+    for flight in flights['features']:
+        flight = Flight(flight)
+        print(flight_fir_info(flight, fir))
