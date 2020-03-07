@@ -1,0 +1,425 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EBBR",
+        "name": "BRUSSELS NATIONAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.48,
+          50.9
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGAA",
+        "name": "BELFAST/ALDERGROVE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.22,
+          54.66
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGAE",
+        "name": "LONDONDERRY/EGLINTON"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.16,
+          55.04
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGBB",
+        "name": "BIRMINGHAM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.75,
+          52.45
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGCC",
+        "name": "MANCHESTER"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.27,
+          53.35
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGGD",
+        "name": "BRISTOL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.72,
+          51.38
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGGP",
+        "name": "LIVERPOOL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.85,
+          53.33
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGGW",
+        "name": "LONDON/LUTON"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.37,
+          51.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGJB",
+        "name": "GUERNSEY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.6,
+          49.44
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGJJ",
+        "name": "JERSEY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2,
+          49.21
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGKK",
+        "name": "LONDON/GATWICK"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.19,
+          51.15
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGLC",
+        "name": "LONDON CITY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.06,
+          51.51
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGLL",
+        "name": "LONDON/HEATHROW"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.46,
+          51.48
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGMC",
+        "name": "SOUTHEND"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.69,
+          51.57
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGNJ",
+        "name": "HUMBERSIDE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.35,
+          53.57
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGNT",
+        "name": "NEWCASTLE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.69,
+          55.04
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGNV",
+        "name": "DURHAM TEES VALLEY"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.43,
+          54.51
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGPD",
+        "name": "ABERDEEN/DYCE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.2,
+          57.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGPF",
+        "name": "GLASGOW"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.43,
+          55.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGPH",
+        "name": "EDINBURGH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.37,
+          55.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGSC",
+        "name": "CAMBRIDGE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.17,
+          52.2
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGSH",
+        "name": "NORWICH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.28,
+          52.68
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EGSS",
+        "name": "LONDON/STANSTED"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.23,
+          51.88
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EHAM",
+        "name": "AMSTERDAM/SCHIPHOL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.76,
+          52.31
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EICK",
+        "name": "CORK"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.49,
+          51.84
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "EIDW",
+        "name": "DUBLIN INTL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.27,
+          53.42
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "ELLX",
+        "name": "LUXEMBOURG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.2,
+          49.62
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "ENZV",
+        "name": "STAVANGER/SOLA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.64,
+          58.88
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "LFBO",
+        "name": "TOULOUSE/BLAGNAC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.37,
+          43.64
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "designator": "LFPG",
+        "name": "PARIS/CHARLES DE GAULLE"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.55,
+          49.01
+        ]
+      }
+    }
+  ]
+}
