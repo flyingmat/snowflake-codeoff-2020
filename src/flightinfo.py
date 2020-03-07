@@ -65,6 +65,8 @@ class FIR:
                     cf = 1
         return cf
 
+# return a multi-line string containing information regarding the relation between
+# a flight and a fir
 def flight_fir_info(flight, fir):
     cf = fir.charge_factor(flight)
     return "Flight {}: charge {}!\n    {}\n    {}\n    {}\n".format(
@@ -79,13 +81,17 @@ def flight_fir_info(flight, fir):
             "is {}fly-through".format("" if flight.is_flythrough(fir) else "not ")
         )
 
+# load json files (fir and flights)
 def parse(fnfir, fnflights):
     with open(fnfir, 'r') as infir:
         fir = json.load(infir)
     with open(fnflights, 'r') as inflights:
         flights = json.load(inflights)
+
     return fir, flights
 
+# print info about a fir and its relation with each flight in the flights file
+# NOTE: the fir file is assumed to only contain one fir roi
 def print_info(fnfir, fnflights):
     fir, flights = parse(fnfir, fnflights)
     fir = FIR(fir)
